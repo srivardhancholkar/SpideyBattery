@@ -6,9 +6,18 @@ static UIColor *SpideyBlue(void) { return [UIColor colorWithRed:0.11 green:0.30 
 static UIColor *SpideyRed(void)  { return [UIColor colorWithRed:0.84 green:0.10 blue:0.13 alpha:1.0]; }
 
 %hook _UIBatteryView
-- (void)setBodyColor:(UIColor *)color { UIColor *c = SpideyBlue(); %orig(c); }
-- (void)setPinColor:(UIColor *)color  { UIColor *c = SpideyBlue(); %orig(c); }
-- (void)setFillColor:(UIColor *)color { UIColor *c = SpideyBlue(); %orig(c); }
+- (void)setBodyColor:(UIColor *)color {
+    UIColor *c = SpideyBlue();
+    %orig(c);
+}
+- (void)setPinColor:(UIColor *)color {
+    UIColor *c = SpideyBlue();
+    %orig(c);
+}
+- (void)setFillColor:(UIColor *)color {
+    UIColor *c = SpideyBlue();
+    %orig(c);
+}
 %end
 
 %hook _UIStatusBarStringView
