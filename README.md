@@ -48,7 +48,20 @@ make package FINALPACKAGE=1    # -> packages/*.deb
 
 ## Installing
 
-**Recommended — via Sileo** (handles code-signing/trust permanently, survives reboots):
+## Sideload via Sileo (recommended, reboot-safe)
+
+A prebuilt package is included at [`releases/SpideyBattery_1.1.0.deb`](releases/SpideyBattery_1.1.0.deb).
+
+1. Get the `.deb` onto the phone (AirDrop, Files, `scp`, or download it from this repo).
+2. Open it in **Sileo** → **Install** → **Respring**.
+
+Sileo registers the code-signature with the jailbreak's trust cache, so the tweak reloads
+automatically every time you re-jailbreak (Dopamine is semi-untethered — the tweak is simply
+gone while booted stock, and returns when you re-run Dopamine).
+
+**Alternatively — Sileo details / CLI**
+
+**Via Sileo** (handles code-signing/trust permanently, survives reboots):
 open the `.deb` in Sileo and install, then respring.
 
 **Manual / CLI** (rootless paths shown):
