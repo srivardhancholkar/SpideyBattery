@@ -47,6 +47,6 @@ static void dumpState(UIView *bv) {
 }
 - (void)layoutSubviews {
     %orig;
-    dumpState(self);
+    dumpState((UIView *)self);
 }
 %end
