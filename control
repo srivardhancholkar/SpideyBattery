@@ -1,0 +1,9 @@
+Package: com.spidey.battery
+Name: SpideyBattery
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: Spider-Man status bar battery — blue icon, red percentage
+Author: pi
+Maintainer: pi
+Section: Tweaks
+Depends: ellekit
