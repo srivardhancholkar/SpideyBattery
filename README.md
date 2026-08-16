@@ -36,7 +36,6 @@ See `Tweak.x` — it's small and commented.
 ## Building
 
 No Mac required — pushing to this repo builds a real **arm64 + arm64e** `.deb` on a macOS
-GitHub Actions runner (`.github/workflows/build.yml`). Grab the artifact from the latest
 green **Actions** run.
 
 To build locally on a Mac instead:
